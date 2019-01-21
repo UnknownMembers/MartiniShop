@@ -1,0 +1,116 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Магазин за обувки Мартини </title>
+        <link href="css/resetcss.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/stylesheet.css"/>
+        <link href="css/slideshow.css" rel="stylesheet" type="text/css"/>
+        <link href="css/forUs.css" rel="stylesheet" type="text/css"/>
+
+        <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.css"/>
+
+        <!--starting using small icons for shopping-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+        <!--favicon.ico-->
+        <link rel="icon" href="Pictures/5-women-shoes-png-image.png"/>
+        <!--         jQuery and JavaScript-->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>     
+        <script src="Javascript/MyScript.js"></script>
+    </head>
+    <body>
+        <div class="aboutus">
+            <img class="topCanvas" src="Pictures/NewCanvas1.jpg" alt="Top canvas"/>
+            <a class="info" href="#"><i class="fas fa-phone-volume"> +359 89 858 9900 </i></a>
+            <a class="info" href="#"><i class="fas fa-envelope"> afgs@abv.bg</i></a>
+            <a class="info" href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+        </div>
+
+        <nav>
+            <img class="logo" src="Pictures/title_back-transparent.png" alt="logo"/>
+            <h1 class="h11"><a class="h11" href="index.html"> Добре дошли в магазин Мартини </a></h1>
+
+            <ul>
+                <li class="button"><a class="buttonLink" href="index.html"> Начало </a></li>
+                <li id="female-link" class="button"><a class="buttonLink" href="FemaleShoes.html"> Дамски обувки </a></li>
+                <li id="male-link" class="button"><a class="buttonLink" href="MenShoes.html"> Мъжки обувки </a></li>
+                <li id="womensbags-link" class="button"><a class="buttonLink" href="WomensBags.html"> Дамски чанти </a></li>
+                <li class="button"><a class="buttonLink" href="forUs.html"> За нас </a></li>
+                <li id="contacts-link" class="button"><i class="fas fa-shopping-cart"></i><a class="buttonLink" href="Shop.html"> Количка </a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+
+            <div class="news">
+                <h2>Уважаеми клиенти тук ще разберете повече за нас:</h2>
+                <p>
+                    Ние сме магазин намиращ се в гр. Добрич . Адрес (център, ул. еди коя си пред
+                    училище т.н);
+                    Работим с фирма Мартини , която произвежда кожени и велурени
+                    дамски и мъжки обувки , както и нежни дамски чанти. Всяка една обувка
+                    е направена от естествена кожа . Гаранция за всички обувки . 
+                    Бляблябля и т.н информация....
+                </p>
+                <p>Лек и успешен ден!</p>
+            </div>
+        </div>
+
+
+        <div class="right">
+
+                <input type="radio" name="images" id="rbtn1" checked/>
+                <input type="radio" name="images" id="rbtn2"/>
+                <input type="radio" name="images" id="rbtn3"/>
+
+                <div class="slide-img" id="one">
+                    <img src="Pictures_On_Shoes/0b4f9cc25cd29b1a9cd9831312b15b3e.jpg" alt=""/>
+
+                    <label for="rbtn3" class="prev"></label>
+                    <label for="rbtn2" class="next"></label>
+                    <h2> 120 лв от 200лв </h2>
+
+                </div>
+
+                <div class="slide-img" id="two">
+                    <img src="Pictures_On_Shoes/aba79cf0ae652ea49fa68f2d86d1c290.jpg" alt=""/>
+
+                    <label for="rbtn1" class="prev"></label>
+                    <label for="rbtn3" class="next"></label>
+                    <h2> 100лв от 130 лв </h2>
+
+                </div>
+
+                <div class="slide-img" id="three">
+                    <img src="Pictures_On_Shoes/ec5fd3051aae3e7c43b157e6c2df86d8.jpg" alt=""/>
+
+                    <label for="rbtn2" class="prev"></label>
+                    <label for="rbtn1" class="next"></label>
+                    <h2> 90лв от 120 лв </h2>
+
+                </div>
+
+                <div class="nav">
+                    <label for="rbtn1" class="dots" id="dot1"></label> 
+                    <label for="rbtn2" class="dots" id="dot2"></label>   
+                    <label for="rbtn3" class="dots" id="dot3"></label>   
+                </div>
+
+            </div>
+
+        <footer>
+            <img src="Pictures/we_are_open.png" alt="We are open">
+            <p id="footerP1">&copy2018 Магазин Мартини ви предлага качествена 
+                стока от естествен материал.Всяка една стока е 
+                шита на ръка.Доказани професионалисти &copy 2018!
+                <br/>
+                Повече за нас може да разберете като кликните върху бутона "За нас" горе в менюто
+            </p>
+        </footer>               
+    </body>
+</html>
