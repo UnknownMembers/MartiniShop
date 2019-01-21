@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 09.11.2018, 19:43:22
+    Author     : HP
+*/
+
+.right {
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    width: 70%;
+    height: 70%;
+    padding-bottom: 40%;
+    background: #4c4c4c;
+    border: 2px solid #2c2c2c;
+}
+
+.slide-img {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+}
+
+.slide-img img{
+    width: 100%;
+    height: 100%;
+}
+
+#rbtn1, #rbtn2, #rbtn3 {
+    display: none;
+}
+
+.prev, .next {
+    width: 12%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(88,88,88,.4);
+    z-index: 99;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.nav {
+    margin-left: 45%;
+    width: 100%;
+    height: 11%;
+    bottom: 12px;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+}
+
+.dots {
+    bottom: 5px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background: rgba(0,0,0,.6);
+}
+
+.slide-img {
+    z-index: -1;
+}
+
+#rbtn1:checked ~ #one,
+#rbtn2:checked ~ #two,
+#rbtn3:checked ~ #three{
+    z-index: 9;
+}
+
+#rbtn1:checked ~ .nav #dot1,
+#rbtn2:checked ~ .nav #dot2,
+#rbtn3:checked ~ .nav #dot3{
+    background: #fff;
+}
